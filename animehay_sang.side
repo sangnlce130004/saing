@@ -1,0 +1,1054 @@
+{
+  "id": "354176ae-3700-41db-8957-7008f863c241",
+  "version": "2.0",
+  "name": "animehay",
+  "url": "http://animehay.tv",
+  "tests": [{
+    "id": "f0886237-1094-4d1a-a38d-9797093aabdc",
+    "name": "tc1-search",
+    "commands": [{
+      "id": "2173d9b9-2f74-4020-a452-662a7a6b2f00",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "abe275ef-7e19-4b48-b7c3-845f8ca1b962",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "975x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7fcd23d-6bd4-4476-952f-f2b15aa3f6e4",
+      "comment": "",
+      "command": "click",
+      "target": "id=keyword",
+      "targets": [
+        ["id=keyword", "id"],
+        ["name=q", "name"],
+        ["css=#keyword", "css:finder"],
+        ["xpath=//input[@id='keyword']", "xpath:attributes"],
+        ["xpath=//div[@id='ah-cat']/div[2]/div/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4724fc3b-9993-4340-b6db-6a007a75dc74",
+      "comment": "",
+      "command": "type",
+      "target": "id=keyword",
+      "targets": [
+        ["id=keyword", "id"],
+        ["name=q", "name"],
+        ["css=#keyword", "css:finder"],
+        ["xpath=//input[@id='keyword']", "xpath:attributes"],
+        ["xpath=//div[@id='ah-cat']/div[2]/div/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "naruto"
+    }, {
+      "id": "cad86baf-7b18-42fe-a917-7b2c6a1b597c",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=keyword",
+      "targets": [
+        ["id=keyword", "id"],
+        ["name=q", "name"],
+        ["css=#keyword", "css:finder"],
+        ["xpath=//input[@id='keyword']", "xpath:attributes"],
+        ["xpath=//div[@id='ah-cat']/div[2]/div/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "ddfd0e7e-3643-4dfa-8614-dcdb84209e5d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ah-col-film:nth-child(14) .ah-effect-film > a",
+      "targets": [
+        ["css=.ah-col-film:nth-child(14) .ah-effect-film > a", "css:finder"],
+        ["xpath=//div[@id='ah-container']/div/div[14]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://animehay.tv/phim/naruto-the-movie-7-the-last-f1377.html']", "xpath:href"],
+        ["xpath=//div[14]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b1df94e-7a5a-41e2-9c71-f7896ae7dc4d",
+      "comment": "",
+      "command": "click",
+      "target": "id=lq1",
+      "targets": [
+        ["id=lq1", "id"],
+        ["linkText=Phần 1", "linkText"],
+        ["css=#lq1", "css:finder"],
+        ["xpath=//a[contains(text(),'Phần 1')]", "xpath:link"],
+        ["xpath=//a[@id='lq1']", "xpath:attributes"],
+        ["xpath=//div[@id='ah-pif']/div[3]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'naruto-dattebayo-animehay-f277.html')]", "xpath:href"],
+        ["xpath=//div[3]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Phần 1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e5b64e8-3804-4119-8d50-554b06ea87aa",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Xem Phim",
+      "targets": [
+        ["linkText=Xem Phim", "linkText"],
+        ["css=.button-one", "css:finder"],
+        ["xpath=//a[contains(text(),'Xem Phim')]", "xpath:link"],
+        ["xpath=//div[@id='ah-pif']/div/div[3]/div/span/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://animehay.tv/phim/naruto-dattebayo-tap-1-e83937.html']", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Xem Phim')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "272c3324-e9f5-4e4b-9611-c9debd97e9aa",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f5737a89-6c63-472a-bc88-00e1eb5a9a17",
+    "name": "tc2-login",
+    "commands": [{
+      "id": "fa441f4d-f7b2-4a49-846f-e6f7c8eb1cc2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a28a830-8ce6-4189-82fa-6f78c1790f8c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "975x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0eaa0a3b-140f-486b-87fe-0e6597b3e993",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Đăng nhập",
+      "targets": [
+        ["linkText=Đăng nhập", "linkText"],
+        ["css=.ah-button-login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Đăng nhập')]", "xpath:link"],
+        ["xpath=//div[@id='ah-cat']/div[2]/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dang-nhap?ref=/')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Đăng nhập')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "929e83d3-ffa9-4a99-bfce-292065320905",
+      "comment": "",
+      "command": "click",
+      "target": "name=user_id",
+      "targets": [
+        ["name=user_id", "name"],
+        ["css=div:nth-child(1) > span > input", "css:finder"],
+        ["xpath=//input[@name='user_id']", "xpath:attributes"],
+        ["xpath=//div[@id='ah-container']/form/div/span[2]/input", "xpath:idRelative"],
+        ["xpath=//span[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea72474d-0b30-45b4-81de-c569aeec4814",
+      "comment": "",
+      "command": "type",
+      "target": "name=user_id",
+      "targets": [
+        ["name=user_id", "name"],
+        ["css=div:nth-child(1) > span > input", "css:finder"],
+        ["xpath=//input[@name='user_id']", "xpath:attributes"],
+        ["xpath=//div[@id='ah-container']/form/div/span[2]/input", "xpath:idRelative"],
+        ["xpath=//span[2]/input", "xpath:position"]
+      ],
+      "value": "animehay"
+    }, {
+      "id": "3e6467d4-aa9e-4a11-acd6-77a5f3493221",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=div:nth-child(2) > span > input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='ah-container']/form/div[2]/span[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/span[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "ed787f93-ae67-4843-ac41-496a390334b5",
+      "comment": "",
+      "command": "click",
+      "target": "name=send_log",
+      "targets": [
+        ["name=send_log", "name"],
+        ["css=div > input", "css:finder"],
+        ["xpath=//input[@name='send_log']", "xpath:attributes"],
+        ["xpath=//div[@id='ah-container']/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5342b37c-5d30-4f61-a7c8-18a4258beca0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ah-row-film > .ah-col-film:nth-child(7) .ah-effect-film > a",
+      "targets": [
+        ["css=.ah-row-film > .ah-col-film:nth-child(7) .ah-effect-film > a", "css:finder"],
+        ["xpath=//div[@id='ah-container']/div[2]/div[7]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://animehay.tv/phim/boruto-naruto-next-generations-f1877.html'])[3]", "xpath:href"],
+        ["xpath=//div[2]/div[7]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de45cba4-8ea8-4453-8a27-592a59bdbcc5",
+      "comment": "",
+      "command": "click",
+      "target": "id=addBox",
+      "targets": [
+        ["id=addBox", "id"],
+        ["linkText=Thêm vào hộp", "linkText"],
+        ["css=#addBox", "css:finder"],
+        ["xpath=//a[contains(text(),'Thêm vào hộp')]", "xpath:link"],
+        ["xpath=//a[@id='addBox']", "xpath:attributes"],
+        ["xpath=//div[@id='ah-pif']/div/div[3]/div/span[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0)')]", "xpath:href"],
+        ["xpath=//span[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Thêm vào hộp')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8388862-f705-4031-a131-125a9fca3b7b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Hộp Phim",
+      "targets": [
+        ["linkText=Hộp Phim", "linkText"],
+        ["css=.ah-button-fbox > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Hộp Phim')]", "xpath:link"],
+        ["xpath=//div[@id='ah-cat']/div[2]/div/div[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/hop-phim')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Hộp Phim')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aceb9f17-534c-45f6-907e-da6e424bc181",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ah-col-film:nth-child(7) .ah-effect-film > a",
+      "targets": [
+        ["css=.ah-col-film:nth-child(7) .ah-effect-film > a", "css:finder"],
+        ["xpath=//div[@id='ah-container']/div/div[5]/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://animehay.tv/phim/boruto-naruto-next-generations-f1877.html']", "xpath:href"],
+        ["xpath=//div[5]/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3de02a2d-2f04-435b-ac7b-c77b50cca92f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "aaba8b9e-ce43-400b-b2aa-f81bf9cd4738",
+    "name": "TC3-danhmuc",
+    "commands": [{
+      "id": "86dfb1e1-8ce6-4a90-9e80-8cc82a4e362a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9705b3b-52c4-45a7-8933-533fe020f70a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "975x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "218a0b3b-7f98-4c9e-b6b8-6d6ca88ec671",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-align-justify",
+      "targets": [
+        ["css=.fa-align-justify", "css:finder"],
+        ["xpath=//div[@id='ah-cat']/div/ul/li[2]/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac6d4a5e-4314-4e58-ae11-8209dc273dd7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ah-lsm:nth-child(5)",
+      "targets": [
+        ["css=.ah-lsm:nth-child(5)", "css:finder"],
+        ["xpath=(//li[@onclick='menuDropdown(this)'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='ah-cat']/div/ul/ul/li[3]", "xpath:idRelative"],
+        ["xpath=//div/ul/ul/li[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f7c4118-b60b-4f71-ae86-25c1d734ce8f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ah-lsm:nth-child(3) > .fa",
+      "targets": [
+        ["css=.ah-lsm:nth-child(3) > .fa", "css:finder"],
+        ["xpath=//div[@id='ah-cat']/div/ul/ul/li[2]/i", "xpath:idRelative"],
+        ["xpath=//ul/ul/li[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87685b5e-4092-4f36-b9d7-f540dc3e0bcd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ah-lsm:nth-child(1) > .fa",
+      "targets": [
+        ["css=.ah-lsm:nth-child(1) > .fa", "css:finder"],
+        ["xpath=//div[@id='ah-cat']/div/ul/ul/li/i", "xpath:idRelative"],
+        ["xpath=//ul/ul/li/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ecee833-2ad0-4478-9075-0f9fbc99f63b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Hành động",
+      "targets": [
+        ["linkText=Hành động", "linkText"],
+        ["css=.ah-ulsm:nth-child(2) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Hành động')]", "xpath:link"],
+        ["xpath=//div[@id='ah-cat']/div/ul/ul/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://animehay.tv/the-loai/phim-anime/hanh-dong']", "xpath:href"],
+        ["xpath=//ul/ul/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Hành động')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8382c1d-bdbf-4c51-8a34-c4bf78dfdcb9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=4",
+      "targets": [
+        ["linkText=4", "linkText"],
+        ["css=.pagination > li:nth-child(4) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'4')])[2]", "xpath:link"],
+        ["xpath=//div[@id='ah-container']/div[2]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://animehay.tv/the-loai/phim-anime/hanh-dong?page=4']", "xpath:href"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1074f374-67bd-4bcc-b94f-f37824aab2e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.next > a",
+      "targets": [
+        ["css=.next > a", "css:finder"],
+        ["xpath=//div[@id='ah-container']/div[2]/ul/li[10]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://animehay.tv/the-loai/phim-anime/hanh-dong?page=8']", "xpath:href"],
+        ["xpath=//div[2]/ul/li[10]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d533ddc4-459a-4f77-9c0d-85198d6cd53b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=53",
+      "targets": [
+        ["linkText=53", "linkText"],
+        ["css=.last > a", "css:finder"],
+        ["xpath=//a[contains(text(),'53')]", "xpath:link"],
+        ["xpath=//div[@id='ah-container']/div[2]/ul/li[11]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://animehay.tv/the-loai/phim-anime/hanh-dong?page=53']", "xpath:href"],
+        ["xpath=//div[2]/ul/li[11]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'53')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfaf874d-a5e5-4301-843b-802dc8cdc22a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-angle-double-left",
+      "targets": [
+        ["css=.fa-angle-double-left", "css:finder"],
+        ["xpath=//div[@id='ah-container']/div[2]/ul/li[2]/a/i", "xpath:idRelative"],
+        ["xpath=//li[2]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "533cf9c1-9615-453f-8891-3a78be57ae4a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=1",
+      "targets": [
+        ["linkText=1", "linkText"],
+        ["css=.pagination > li:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'1')])[10]", "xpath:link"],
+        ["xpath=//div[@id='ah-container']/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://animehay.tv/the-loai/phim-anime/hanh-dong?page=1']", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f965cab-7545-4f32-96a8-af3db1a394ef",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5a52c42a-da58-4601-9e1c-ae67bde53ae2",
+    "name": "tc4-cuongtrang",
+    "commands": [{
+      "id": "cb6a0d72-6a0a-4528-a7cb-dc4a41f43927",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b0ade74a-74e5-468c-8384-1cf499c6a240",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1096",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "71b58dd4-9c9d-4bde-8ac8-fcf33df17b58",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.ah-scroll-fnom",
+      "targets": [
+        ["css=.ah-scroll-fnom", "css:finder"],
+        ["xpath=//div[@id='ah-container']/div/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div", "xpath:position"]
+      ],
+      "value": "750,214"
+    }, {
+      "id": "7613d1cf-7724-4b81-8be5-af6d34c25a6e",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.ah-scroll-fnom",
+      "targets": [
+        ["css=.ah-scroll-fnom", "css:finder"],
+        ["xpath=//div[@id='ah-container']/div/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div", "xpath:position"]
+      ],
+      "value": "750,214"
+    }, {
+      "id": "affcbf7f-dd0d-4684-8334-721b13bb4e5b",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.ah-scroll-fnom",
+      "targets": [
+        ["css=.ah-scroll-fnom", "css:finder"],
+        ["xpath=//div[@id='ah-container']/div/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div", "xpath:position"]
+      ],
+      "value": "750,214"
+    }, {
+      "id": "2194a636-ed25-41c6-aabf-96ddf8b99bec",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.ah-scroll-fnom",
+      "targets": [
+        ["css=.ah-scroll-fnom", "css:finder"],
+        ["xpath=//div[@id='ah-container']/div/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div", "xpath:position"]
+      ],
+      "value": "547,227"
+    }, {
+      "id": "3f38d604-6965-4f63-aae0-a08970e944c6",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.ah-scroll-fnom",
+      "targets": [
+        ["css=.ah-scroll-fnom", "css:finder"],
+        ["xpath=//div[@id='ah-container']/div/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div", "xpath:position"]
+      ],
+      "value": "547,227"
+    }, {
+      "id": "b5521a39-05dd-4ae4-a1e7-61c66c853a4b",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.ah-scroll-fnom",
+      "targets": [
+        ["css=.ah-scroll-fnom", "css:finder"],
+        ["xpath=//div[@id='ah-container']/div/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div", "xpath:position"]
+      ],
+      "value": "547,227"
+    }, {
+      "id": "88491f03-d5cd-4878-ab53-108ba315d052",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.ah-scroll-fnom",
+      "targets": [
+        ["css=.ah-scroll-fnom", "css:finder"],
+        ["xpath=//div[@id='ah-container']/div/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div", "xpath:position"]
+      ],
+      "value": "841,230"
+    }, {
+      "id": "3fec0407-fa96-47f8-92e0-5e85bb774d40",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.ah-scroll-fnom",
+      "targets": [
+        ["css=.ah-scroll-fnom", "css:finder"],
+        ["xpath=//div[@id='ah-container']/div/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div", "xpath:position"]
+      ],
+      "value": "841,230"
+    }, {
+      "id": "5491b0a4-3b5a-486f-9b19-02157b5f07a2",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.ah-scroll-fnom",
+      "targets": [
+        ["css=.ah-scroll-fnom", "css:finder"],
+        ["xpath=//div[@id='ah-container']/div/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div", "xpath:position"]
+      ],
+      "value": "841,230"
+    }, {
+      "id": "10ba7322-119d-4736-9608-01f291fe0749",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ah-home-fnom > .ah-col-film:nth-child(9) .ah-effect-film > a",
+      "targets": [
+        ["css=.ah-home-fnom > .ah-col-film:nth-child(9) .ah-effect-film > a", "css:finder"],
+        ["xpath=//div[@id='ah-container']/div/div/div/div[9]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://animehay.tv/phim/kimetsu-no-yaiba-f2919.html']", "xpath:href"],
+        ["xpath=//div[9]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48f81753-b5a8-4a37-90e6-c733aaa09896",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Xem Phim",
+      "targets": [
+        ["linkText=Xem Phim", "linkText"],
+        ["css=.button-one", "css:finder"],
+        ["xpath=//a[contains(text(),'Xem Phim')]", "xpath:link"],
+        ["xpath=//div[@id='ah-pif']/div/div[3]/div/span/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://animehay.tv/phim/kimetsu-no-yaiba-tap-1-e89452.html']", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Xem Phim')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aab67648-d0bd-43ac-bb43-d93e7f28e03f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Hydrax",
+      "targets": [
+        ["linkText=Hydrax", "linkText"],
+        ["css=.ah-bg-bd > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Hydrax')]", "xpath:link"],
+        ["xpath=//a[@onclick='iframe4()']", "xpath:attributes"],
+        ["xpath=//div[@id='ah-container']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0)')]", "xpath:href"],
+        ["xpath=//body/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Hydrax')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "784ecf16-b9d7-495c-b0ca-b7c014757aad",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=P2P",
+      "targets": [
+        ["linkText=P2P", "linkText"],
+        ["css=.ah-bg-bd > a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'P2P')]", "xpath:link"],
+        ["xpath=//a[@onclick='iframeTwo()']", "xpath:attributes"],
+        ["xpath=//div[@id='ah-container']/div/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0)')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'P2P')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "32a551c7-2005-4412-b19b-f621f015540c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Hydrax",
+      "targets": [
+        ["linkText=Hydrax", "linkText"],
+        ["css=.ah-bg-bd > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Hydrax')]", "xpath:link"],
+        ["xpath=//a[@onclick='iframe4()']", "xpath:attributes"],
+        ["xpath=//div[@id='ah-container']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0)')]", "xpath:href"],
+        ["xpath=//body/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Hydrax')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b951faca-82fb-4247-b445-f579bf40f3e6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Tập tiếp",
+      "targets": [
+        ["linkText=Tập tiếp", "linkText"],
+        ["css=.next-episode", "css:finder"],
+        ["xpath=//a[contains(text(),'Tập tiếp')]", "xpath:link"],
+        ["xpath=//div[@id='ah-container']/div[3]/div/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://animehay.tv/phim/kimetsu-no-yaiba-tap-2-e89532.html']", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Tập tiếp')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f13ed1c4-18ba-43e8-96ee-b2b0078f0fc2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Tập tiếp",
+      "targets": [
+        ["linkText=Tập tiếp", "linkText"],
+        ["css=.next-episode", "css:finder"],
+        ["xpath=//a[contains(text(),'Tập tiếp')]", "xpath:link"],
+        ["xpath=//div[@id='ah-container']/div[3]/div/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://animehay.tv/phim/kimetsu-no-yaiba-tap-3-e89590.html']", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Tập tiếp')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6102461-912a-487f-ad8d-6c88d7d92cf7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=1",
+      "targets": [
+        ["linkText=1", "linkText"],
+        ["css=.ah-wf-le li:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'1')])[10]", "xpath:link"],
+        ["xpath=//div[@id='ah-container']/div[3]/div[2]/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://animehay.tv/phim/kimetsu-no-yaiba-tap-1-e89452.html']", "xpath:href"],
+        ["xpath=//div[3]/div[2]/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85c0ff8f-8ee7-4833-a1fb-643948bba32c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ffdff314-c6cf-4d96-8082-262f474a6d49",
+    "name": "TC5-topphim",
+    "commands": [{
+      "id": "c3fe4fa0-1325-41f6-a47e-7e7a6b59d943",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a0ba834-ca4a-46aa-a862-c208fc93579e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "975x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c7d0ac1c-976d-49a9-bcfe-4d015768371e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=One Piece",
+      "targets": [
+        ["linkText=One Piece", "linkText"],
+        ["css=.ah-ft-links li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'One Piece')]", "xpath:link"],
+        ["xpath=//div[@id='ah-footer']/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://animehay.tv/phim/dao-hai-tac-one-piece-i3-f92.html']", "xpath:href"],
+        ["xpath=//footer/div/div/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5cca9790-f0cf-4195-93e9-05bad83cb586",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.ah-pif-relation",
+      "targets": [
+        ["css=.ah-pif-relation", "css:finder"],
+        ["xpath=//div[@id='ah-pif']/div[3]/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div[3]/div", "xpath:position"]
+      ],
+      "value": "579,61"
+    }, {
+      "id": "4f85e621-1318-4c97-b3fd-ef395e3e8059",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.ah-pif-relation",
+      "targets": [
+        ["css=.ah-pif-relation", "css:finder"],
+        ["xpath=//div[@id='ah-pif']/div[3]/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div[3]/div", "xpath:position"]
+      ],
+      "value": "579,61"
+    }, {
+      "id": "34ae417b-68a5-4b70-ba5d-76ddc546119c",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.ah-pif-relation",
+      "targets": [
+        ["css=.ah-pif-relation", "css:finder"],
+        ["xpath=//div[@id='ah-pif']/div[3]/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div[3]/div", "xpath:position"]
+      ],
+      "value": "579,61"
+    }, {
+      "id": "338e4dad-1e72-4915-9b7c-f3fd247f211b",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.ah-pif-relation",
+      "targets": [
+        ["css=.ah-pif-relation", "css:finder"],
+        ["xpath=//div[@id='ah-pif']/div[3]/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div[3]/div", "xpath:position"]
+      ],
+      "value": "644,49"
+    }, {
+      "id": "efc4d04a-a531-4f6c-9840-ab32ddf0e899",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.ah-pif-relation",
+      "targets": [
+        ["css=.ah-pif-relation", "css:finder"],
+        ["xpath=//div[@id='ah-pif']/div[3]/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div[3]/div", "xpath:position"]
+      ],
+      "value": "644,49"
+    }, {
+      "id": "44d5a7a6-7971-4a7d-a121-1d21df280dbf",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.ah-pif-relation",
+      "targets": [
+        ["css=.ah-pif-relation", "css:finder"],
+        ["xpath=//div[@id='ah-pif']/div[3]/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div[3]/div", "xpath:position"]
+      ],
+      "value": "644,49"
+    }, {
+      "id": "73034299-f9fc-46ab-8140-f8d660204dd4",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.ah-pif-relation",
+      "targets": [
+        ["css=.ah-pif-relation", "css:finder"],
+        ["xpath=//div[@id='ah-pif']/div[3]/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div[3]/div", "xpath:position"]
+      ],
+      "value": "926,80"
+    }, {
+      "id": "4b905acb-e73a-4093-9af8-ab37e96bf578",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.ah-pif-relation",
+      "targets": [
+        ["css=.ah-pif-relation", "css:finder"],
+        ["xpath=//div[@id='ah-pif']/div[3]/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div[3]/div", "xpath:position"]
+      ],
+      "value": "926,80"
+    }, {
+      "id": "9d61acb9-8645-43e1-b087-ada6437cea32",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.ah-pif-relation",
+      "targets": [
+        ["css=.ah-pif-relation", "css:finder"],
+        ["xpath=//div[@id='ah-pif']/div[3]/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div[3]/div", "xpath:position"]
+      ],
+      "value": "926,80"
+    }, {
+      "id": "117ffdeb-5c08-419b-b4fb-a690a82ab34e",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.ah-pif-relation",
+      "targets": [
+        ["css=.ah-pif-relation", "css:finder"],
+        ["xpath=//div[@id='ah-pif']/div[3]/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div[3]/div", "xpath:position"]
+      ],
+      "value": "617,40"
+    }, {
+      "id": "ad6af8b0-14fd-41ef-9a56-d3cbdeb9312d",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.ah-pif-relation",
+      "targets": [
+        ["css=.ah-pif-relation", "css:finder"],
+        ["xpath=//div[@id='ah-pif']/div[3]/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div[3]/div", "xpath:position"]
+      ],
+      "value": "617,40"
+    }, {
+      "id": "fa20ea6c-9277-475d-970c-40f287c7547f",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.ah-pif-relation",
+      "targets": [
+        ["css=.ah-pif-relation", "css:finder"],
+        ["xpath=//div[@id='ah-pif']/div[3]/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div[3]/div", "xpath:position"]
+      ],
+      "value": "617,40"
+    }, {
+      "id": "e499ff07-476f-430b-bdf1-e2abb8ae1895",
+      "comment": "",
+      "command": "click",
+      "target": "id=lq553",
+      "targets": [
+        ["id=lq553", "id"],
+        ["linkText=Movie 12", "linkText"],
+        ["css=#lq553", "css:finder"],
+        ["xpath=//a[contains(text(),'Movie 12')]", "xpath:link"],
+        ["xpath=//a[@id='lq553']", "xpath:attributes"],
+        ["xpath=//div[@id='ah-pif']/div[3]/div/a[13]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'one-piece-movie-2012-one-piece-film-z-animehay-f1164.html')]", "xpath:href"],
+        ["xpath=//a[13]", "xpath:position"],
+        ["xpath=//a[contains(.,'Movie 12')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "87e797f1-ef5d-4cb6-a191-cbd5b354d1f7",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.ah-pif-relation",
+      "targets": [
+        ["css=.ah-pif-relation", "css:finder"],
+        ["xpath=//div[@id='ah-pif']/div[3]/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div[3]/div", "xpath:position"]
+      ],
+      "value": "183,43"
+    }, {
+      "id": "5ca9dc6c-222f-4f78-a023-420683791571",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.ah-pif-relation",
+      "targets": [
+        ["css=.ah-pif-relation", "css:finder"],
+        ["xpath=//div[@id='ah-pif']/div[3]/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div[3]/div", "xpath:position"]
+      ],
+      "value": "183,43"
+    }, {
+      "id": "94a7d27c-900c-4a0e-affa-e2049cd0a628",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.ah-pif-relation",
+      "targets": [
+        ["css=.ah-pif-relation", "css:finder"],
+        ["xpath=//div[@id='ah-pif']/div[3]/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div[3]/div", "xpath:position"]
+      ],
+      "value": "183,43"
+    }, {
+      "id": "dcd6446b-0f61-4710-be17-72949e6730e1",
+      "comment": "",
+      "command": "click",
+      "target": "id=lq541",
+      "targets": [
+        ["id=lq541", "id"],
+        ["linkText=Phần chính", "linkText"],
+        ["css=#lq541", "css:finder"],
+        ["xpath=//a[contains(text(),'Phần chính')]", "xpath:link"],
+        ["xpath=//a[@id='lq541']", "xpath:attributes"],
+        ["xpath=//div[@id='ah-pif']/div[3]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'dao-hai-tac-one-piece-animehay-f92.html')]", "xpath:href"],
+        ["xpath=//div[3]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Phần chính')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2e9c3e8-7914-42c5-8834-9764d502c2c4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=925",
+      "targets": [
+        ["linkText=925", "linkText"],
+        ["css=.ah-pif-ne > a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'925')]", "xpath:link"],
+        ["xpath=//div[@id='ah-pif']/div[3]/div[2]/ul/li/a[2]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://animehay.tv/phim/one-piece-dao-hai-tac-tap-925-e92636.html']", "xpath:href"],
+        ["xpath=//li/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'925')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb33a4f0-9c18-42cd-ad64-916e4d8a85fd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=443",
+      "targets": [
+        ["linkText=443", "linkText"],
+        ["css=li:nth-child(438) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'443')]", "xpath:link"],
+        ["xpath=//div[@id='ah-container']/div[3]/div[2]/div/ul/li[438]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://animehay.tv/phim/one-piece-dao-hai-tac-tap-443-e77034.html']", "xpath:href"],
+        ["xpath=//li[438]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'443')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "30f16df0-eeff-461b-9241-2ca8f0479353",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=123",
+      "targets": [
+        ["linkText=123", "linkText"],
+        ["css=li:nth-child(123) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'123')]", "xpath:link"],
+        ["xpath=//div[@id='ah-container']/div[3]/div[2]/div/ul/li[123]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://animehay.tv/phim/one-piece-dao-hai-tac-tap-123-e76720.html']", "xpath:href"],
+        ["xpath=//li[123]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'123')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e736a8b9-cf16-4fcc-abb2-df693a394e71",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Tập tiếp",
+      "targets": [
+        ["linkText=Tập tiếp", "linkText"],
+        ["css=.next-episode", "css:finder"],
+        ["xpath=//a[contains(text(),'Tập tiếp')]", "xpath:link"],
+        ["xpath=//div[@id='ah-container']/div[3]/div/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://animehay.tv/phim/one-piece-dao-hai-tac-tap-124-e76721.html']", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Tập tiếp')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "034876da-db6a-4d66-b67c-94bb7e8f082f",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb6e7e35-8183-4ad2-ac67-088cb0173243",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jw-slider-volume",
+      "targets": [
+        ["css=.jw-slider-volume", "css:finder"],
+        ["xpath=//div[@id='player']/div[9]/div[4]/div[2]/div[4]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[4]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "66d46e7b-2905-4920-b3f3-bf7c6c580b06",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jw-slider-volume",
+      "targets": [
+        ["css=.jw-slider-volume", "css:finder"],
+        ["xpath=//div[@id='player']/div[9]/div[4]/div[2]/div[4]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[4]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79bf06ff-cd28-4759-8014-bb57441c46df",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jw-slider-time",
+      "targets": [
+        ["css=.jw-slider-time", "css:finder"],
+        ["xpath=//div[@id='player']/div[9]/div[4]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "61b15d3d-d498-488a-8c5a-2bd56b834615",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jw-slider-time",
+      "targets": [
+        ["css=.jw-slider-time", "css:finder"],
+        ["xpath=//div[@id='player']/div[9]/div[4]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "acc14afc-6724-45be-9499-cb3febc5e88a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jw-icon-inline:nth-child(2)",
+      "targets": [
+        ["css=.jw-icon-inline:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='player']/div[9]/div[4]/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a21c303-1d48-4ebd-8225-de33df4c0ab6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jw-icon-inline:nth-child(2)",
+      "targets": [
+        ["css=.jw-icon-inline:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='player']/div[9]/div[4]/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8497a61b-39fa-49f4-aac4-9fa9cbf1e840",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jw-video",
+      "targets": [
+        ["css=.jw-video", "css:finder"],
+        ["xpath=//div[@id='player']/div[2]/video", "xpath:idRelative"],
+        ["xpath=//video", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba97f7c2-7dcf-4909-8dbf-02cee15a908c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8712f123-14fd-47d5-923e-ef14a27037a8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f0886237-1094-4d1a-a38d-9797093aabdc"]
+  }],
+  "urls": ["http://animehay.tv/"],
+  "plugins": []
+}

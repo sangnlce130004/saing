@@ -1,0 +1,304 @@
+{
+  "id": "edc482b7-c012-4bc9-83a5-e400904d52d5",
+  "version": "2.0",
+  "name": "anime",
+  "url": "http://animehay.tv",
+  "tests": [{
+    "id": "acc6371d-9d39-4053-a8f2-3c358bf26636",
+    "name": "login",
+    "commands": [{
+      "id": "a51c0ada-291e-421d-9fec-5124ec76497e",
+      "comment": "",
+      "command": "open",
+      "target": "http://animehay.tv/dang-nhap?ref=/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "18095b25-b68d-4228-a76d-c6dd810c877a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x695",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da3f06af-d21e-464c-99b4-f3e597e4f588",
+      "comment": "",
+      "command": "click",
+      "target": "name=user_id",
+      "targets": [
+        ["name=user_id", "name"],
+        ["css=div:nth-child(1) > span > input", "css:finder"],
+        ["xpath=//input[@name='user_id']", "xpath:attributes"],
+        ["xpath=//div[@id='ah-container']/form/div/span[2]/input", "xpath:idRelative"],
+        ["xpath=//span[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc74cd0a-cb8c-4acd-823b-ad5291083465",
+      "comment": "",
+      "command": "type",
+      "target": "name=user_id",
+      "targets": [
+        ["name=user_id", "name"],
+        ["css=div:nth-child(1) > span > input", "css:finder"],
+        ["xpath=//input[@name='user_id']", "xpath:attributes"],
+        ["xpath=//div[@id='ah-container']/form/div/span[2]/input", "xpath:idRelative"],
+        ["xpath=//span[2]/input", "xpath:position"]
+      ],
+      "value": "animehay"
+    }, {
+      "id": "a806a197-08e9-4bf8-97cd-f866e2b4f87d",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=div:nth-child(2) > span > input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='ah-container']/form/div[2]/span[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/span[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "2aa8df3a-db5f-41c4-b6dd-5d1c4bd9b1e7",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=div:nth-child(2) > span > input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='ah-container']/form/div[2]/span[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/span[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "55006fe9-19bb-49a6-9d57-976b439c9950",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ah-row-film > .ah-col-film:nth-child(6) .ah-effect-film > a",
+      "targets": [
+        ["css=.ah-row-film > .ah-col-film:nth-child(6) .ah-effect-film > a", "css:finder"],
+        ["xpath=//div[@id='ah-container']/div[2]/div[6]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://animehay.tv/phim/nekopara-tv-f3096.html']", "xpath:href"],
+        ["xpath=//div[2]/div[6]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5be5a38d-9745-4b2b-b968-91d79a6433c7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Đăng Xuất",
+      "targets": [
+        ["linkText=Đăng Xuất", "linkText"],
+        ["css=.ah-button-logout > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Đăng Xuất')]", "xpath:link"],
+        ["xpath=//div[@id='ah-cat']/div[2]/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dang-xuat')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Đăng Xuất')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "76e54785-7857-4b36-8f49-5e319d81e60a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Đăng nhập",
+      "targets": [
+        ["linkText=Đăng nhập", "linkText"],
+        ["css=.ah-button-login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Đăng nhập')]", "xpath:link"],
+        ["xpath=//div[@id='ah-cat']/div[2]/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dang-nhap?ref=/')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Đăng nhập')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "99fe4708-53f4-471a-8053-d37921121f2a",
+    "name": "search",
+    "commands": [{
+      "id": "f9a3fd80-1bc3-4026-8b05-eee25385f576",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ded04fc5-4076-4964-938c-6f4713eaf160",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x838",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac416adf-d186-4a77-a2fd-d4f833f74627",
+      "comment": "",
+      "command": "click",
+      "target": "id=keyword",
+      "targets": [
+        ["id=keyword", "id"],
+        ["name=q", "name"],
+        ["css=#keyword", "css:finder"],
+        ["xpath=//input[@id='keyword']", "xpath:attributes"],
+        ["xpath=//div[@id='ah-cat']/div[2]/div/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "515d0868-b92c-4d84-adb2-623fa85e8393",
+      "comment": "",
+      "command": "type",
+      "target": "id=keyword",
+      "targets": [
+        ["id=keyword", "id"],
+        ["name=q", "name"],
+        ["css=#keyword", "css:finder"],
+        ["xpath=//input[@id='keyword']", "xpath:attributes"],
+        ["xpath=//div[@id='ah-cat']/div[2]/div/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "sao"
+    }, {
+      "id": "6747754b-0d52-4677-adf3-2224e14a09c7",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=keyword",
+      "targets": [
+        ["id=keyword", "id"],
+        ["name=q", "name"],
+        ["css=#keyword", "css:finder"],
+        ["xpath=//input[@id='keyword']", "xpath:attributes"],
+        ["xpath=//div[@id='ah-cat']/div[2]/div/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "d34e2a16-f9d6-4af6-9de2-5200d45b7491",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ah-col-film:nth-child(2) .ah-effect-film > a",
+      "targets": [
+        ["css=.ah-col-film:nth-child(2) .ah-effect-film > a", "css:finder"],
+        ["xpath=//div[@id='ah-container']/div/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://animehay.tv/phim/ngoi-sao-phuong-dong-f2668.html']", "xpath:href"],
+        ["xpath=//body/div/div/div/div[2]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04a0b815-1b5b-452d-9be4-f3baaf679e13",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=addBox",
+      "targets": [
+        ["id=addBox", "id"],
+        ["linkText=Thêm vào hộp", "linkText"],
+        ["css=#addBox", "css:finder"],
+        ["xpath=//a[contains(text(),'Thêm vào hộp')]", "xpath:link"],
+        ["xpath=//a[@id='addBox']", "xpath:attributes"],
+        ["xpath=//div[@id='ah-pif']/div/div[3]/div/span[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0)')]", "xpath:href"],
+        ["xpath=//span[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Thêm vào hộp')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbd1916e-f1ab-453c-a96e-a4376bc34882",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=addBox",
+      "targets": [
+        ["id=addBox", "id"],
+        ["linkText=Thêm vào hộp", "linkText"],
+        ["css=#addBox", "css:finder"],
+        ["xpath=//a[contains(text(),'Thêm vào hộp')]", "xpath:link"],
+        ["xpath=//a[@id='addBox']", "xpath:attributes"],
+        ["xpath=//div[@id='ah-pif']/div/div[3]/div/span[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0)')]", "xpath:href"],
+        ["xpath=//span[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Thêm vào hộp')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd9bb91d-5b87-4dca-8e6c-e6689a2c44ee",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Full",
+      "targets": [
+        ["linkText=Full", "linkText"],
+        ["css=.ah-pif-ne > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Full')]", "xpath:link"],
+        ["xpath=//div[@id='ah-pif']/div[3]/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://animehay.tv/phim/ngoi-sao-phuong-dong-tap-full-e63333.html'])[2]", "xpath:href"],
+        ["xpath=//div[3]/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Full')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "19c1574a-2c90-4e14-8b45-b8d9a76078fc",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "75365f5a-c4c2-4d8a-99aa-061a4e322130",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jw-icon-display",
+      "targets": [
+        ["css=.jw-icon-display", "css:finder"],
+        ["xpath=//div[@id='player']/div[9]/div/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23bb94ff-861d-42c0-a5f2-df663f5474f9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jw-video",
+      "targets": [
+        ["css=.jw-video", "css:finder"],
+        ["xpath=//div[@id='player']/div[2]/video", "xpath:idRelative"],
+        ["xpath=//video", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcf0f8ea-c31f-4fe7-b337-40a38c9ab98d",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "3dc70f8e-d5c8-4269-802d-71521007ff36",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ANIMEHAY",
+      "targets": [
+        ["linkText=ANIMEHAY", "linkText"],
+        ["css=.ah-text-logo > a", "css:finder"],
+        ["xpath=//div[@id='ah-cat']/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'ANIMEHAY')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9ce39ff7-5093-491c-8170-9ffb1232b8d6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://animehay.tv/", "http://animehay.tv/dang-nhap?ref=/"],
+  "plugins": []
+}
